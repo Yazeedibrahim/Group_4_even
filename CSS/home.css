@@ -1,0 +1,104 @@
+body{
+    padding: 0;
+    margin: 10px;
+    background-color:#FFE4E1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: palevioletred;
+    border-width: 6px;
+    background: #e0e0e0;
+    box-shadow: 5px 15px 19px black;
+    animation: change 4s infinite ease-in-out;
+}
+@keyframes change {
+    0%{
+        border-top-color:red ;
+        
+        border-right-color:pink;
+        border-bottom-color:orangered;
+        border-left-color: purple;
+    }
+    42%{
+        border-top-color:purple ;
+        border-right-color:red ;
+        border-bottom-color:pink;
+        border-left-color:orangered ;
+    }
+    69%{
+        border-top-color:orangered;
+        border-right-color:purple ;
+        border-bottom-color: red;
+        border-left-color:pink ;
+    }
+    100%{
+        border-top-color:pink;
+        border-right-color:orangered;
+        border-bottom-color:purple ;
+        border-left-color:red ;
+    }
+}
+p{
+    text-align: center;
+    color: blueviolet;
+}
+ul{
+    list-style: none;
+    position: relative;
+    animation: move 2s ease-in;
+}
+@keyframes move{
+    0%{top: -50px;}
+    100%{top: 0px;}
+}
+li{
+    border-style: inset;
+    box-shadow: 5px 5px 19px black;
+    border-width: 5px;
+    border-color: pink;
+    color: pink;
+    background: purple;
+    width: 150px;
+    height: 90px;
+   display:inline;
+   margin: 10px;
+   cursor:pointer;
+    padding: 8px;
+    animation: change 4s infinite;
+}
+li:hover{
+    color:purple;
+    background:red;
+    border-radius: 10px;
+    transition: 1s;
+}
+.blink{
+    animation: close 2s infinite;
+}
+@keyframes close {
+    0%{
+        opacity: 2;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 2;
+    }
+}
+a{
+    text-decoration: none;
+    color: pink;
+}
+.logo{
+    width: 100px;
+    height: 90px;
+    border: none;
+}
+footer{
+    background: purple;
+}

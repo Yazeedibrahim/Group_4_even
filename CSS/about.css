@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 10px;
+    background-color:#FFE4E1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ul{
+    list-style: none;
+    position: relative;
+    animation: move 2s ease-in;
+}
+@keyframes move{
+    0%{top: -50px;}
+    100%{top: 0px;}
+}
+li{
+    border-style: inset;
+    box-shadow: 5px 5px 19px black;
+    border-width: 5px;
+    border-color: pink;
+    color: pink;
+    background: purple;
+    width: 150px;
+    height: 90px;
+   display:inline;
+   margin: 10px;
+   cursor:pointer;
+    padding: 8px;
+    animation: change 4s infinite;
+}
+li:hover{
+    color:purple;
+    background:red;
+    border-radius: 10px;
+    transition: 1s;
+}
+@keyframes change {
+    0%{
+        border-top-color:red ;
+        
+        border-right-color:pink;
+        border-bottom-color:orangered;
+        border-left-color: purple;
+    }
+    42%{
+        border-top-color:purple ;
+        border-right-color:red ;
+        border-bottom-color:pink;
+        border-left-color:orangered ;
+    }
+    69%{
+        border-top-color:orangered;
+        border-right-color:purple ;
+        border-bottom-color: red;
+        border-left-color:pink ;
+    }
+    100%{
+        border-top-color:pink;
+        border-right-color:orangered;
+        border-bottom-color:purple ;
+        border-left-color:red ;
+    }
+}
+#yaz{
+    font-size: 50px;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: pink;
+}
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    color: blueviolet;
+}
+.li{
+   
+    display:block;
+    position: relative;
+    border: none;
+    background-color:none;
+    text-align: center;
+    height: 30px;
+   
+}
+
+footer{
+    background: purple;
+}
+div{
+    background: purple;
+    width: 60%;
+    border-radius: 10px;
+}
+button{
+    width: 50%;
+    background: pink;
+    color: purple;
+    transition: 2s;
+}
+button:hover{
+    background: red;
+    color: white;
+}
+img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: palevioletred;
+    border-width: 6px;
+    background: #e0e0e0;
+    box-shadow: 5px 15px 19px black;
+    animation: change 4s infinite ease-in-out;
+}
